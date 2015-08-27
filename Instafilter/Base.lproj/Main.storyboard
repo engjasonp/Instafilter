@@ -54,49 +54,140 @@
                                 <rect key="frame" x="16" y="540" width="120" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IMO-zh-YaP"/>
+                                    <constraint firstAttribute="width" constant="120" id="XUd-iC-k2z"/>
                                     <constraint firstAttribute="width" constant="120" id="fE2-u5-1rO"/>
                                 </constraints>
                                 <state key="normal" title="Change Filter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IMO-zh-YaP"/>
+                                        <exclude reference="fE2-u5-1rO"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBg-IF-H8H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7V-f6-dhs">
-                                <rect key="frame" x="524" y="540" width="60" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7V-f6-dhs">
+                                <rect key="frame" x="503" y="540" width="81" height="44"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2dH-6S-8Xz"/>
                                     <constraint firstAttribute="width" constant="60" id="QaO-Lp-rFK"/>
                                 </constraints>
-                                <state key="normal" title="Save">
+                                <state key="normal" title="Save Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QaO-Lp-rFK"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtu-F2-K6A"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZU-5f-JU1">
+                                <rect key="frame" x="225" y="551" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="IzG-Wa-L4F"/>
+                                    <constraint firstAttribute="height" constant="21" id="j8X-CO-RrV"/>
+                                    <constraint firstAttribute="width" constant="150" id="sGp-mP-IuU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IzG-Wa-L4F"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="leading" secondItem="mHL-Si-dzG" secondAttribute="trailing" constant="39" id="0oS-G8-O4Z"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="baseline" id="6kZ-xY-ujg"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="baseline" id="7mV-uh-X3G"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AAI-4u-3ul"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="centerX" secondItem="Gzd-GG-Gm8" secondAttribute="centerX" id="AMG-Er-T2g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mHL-Si-dzG" secondAttribute="bottom" constant="16" id="Az5-y8-JJH"/>
+                            <constraint firstItem="mHL-Si-dzG" firstAttribute="top" secondItem="LDB-eV-rFu" secondAttribute="bottom" constant="8" symbolic="YES" id="C51-wT-WfS"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="baseline" id="CnF-kg-wvA"/>
                             <constraint firstItem="K7V-f6-dhs" firstAttribute="top" secondItem="mHL-Si-dzG" secondAttribute="top" id="EUa-s6-XnS"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="baseline" id="Gjt-gR-7aC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="irA-IS-Miq" secondAttribute="trailing" constant="12" id="ICV-wu-LRO"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="firstBaseline" id="Jxm-d5-lXT"/>
                             <constraint firstItem="Gzd-GG-Gm8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KIR-ti-DpC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9ZU-5f-JU1" secondAttribute="bottom" constant="28" id="LbM-XR-UgZ"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="M1E-ce-94d"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="firstBaseline" id="OO5-Bq-fWQ"/>
                             <constraint firstAttribute="trailing" secondItem="Gzd-GG-Gm8" secondAttribute="trailing" id="T4C-lb-bkR"/>
                             <constraint firstItem="Gzd-GG-Gm8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="T8F-GD-H3Z"/>
                             <constraint firstItem="LDB-eV-rFu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="U7y-wL-NqU"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="firstBaseline" id="VNm-wa-d3Z"/>
                             <constraint firstItem="irA-IS-Miq" firstAttribute="leading" secondItem="LDB-eV-rFu" secondAttribute="trailing" constant="8" symbolic="YES" id="a3X-8X-Gfb"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="centerX" secondItem="Gzd-GG-Gm8" secondAttribute="centerX" id="a93-he-e8A"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="baseline" id="b2C-gL-HrW"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="top" secondItem="irA-IS-Miq" secondAttribute="bottom" constant="13" id="cXp-Nc-4aQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9ZU-5f-JU1" secondAttribute="bottom" constant="28" id="dBJ-Hd-fAx"/>
                             <constraint firstItem="mHL-Si-dzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtS-oo-Imp"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="baseline" secondItem="9ZU-5f-JU1" secondAttribute="baseline" id="eOA-38-MhF"/>
                             <constraint firstItem="irA-IS-Miq" firstAttribute="top" secondItem="Gzd-GG-Gm8" secondAttribute="bottom" constant="14" id="f1h-Nb-yau"/>
                             <constraint firstItem="K7V-f6-dhs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fPs-00-OI8"/>
                             <constraint firstItem="mHL-Si-dzG" firstAttribute="top" secondItem="LDB-eV-rFu" secondAttribute="bottom" constant="8" symbolic="YES" id="gJ4-zi-Le6"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="top" secondItem="irA-IS-Miq" secondAttribute="bottom" constant="13" id="gd7-WP-aIc"/>
                             <constraint firstItem="mHL-Si-dzG" firstAttribute="top" secondItem="irA-IS-Miq" secondAttribute="bottom" constant="2" id="hCC-RQ-uu4"/>
+                            <constraint firstItem="mHL-Si-dzG" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="firstBaseline" id="hQr-eK-bfx"/>
+                            <constraint firstItem="mHL-Si-dzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="izi-3F-VWf"/>
+                            <constraint firstItem="mHL-Si-dzG" firstAttribute="top" secondItem="irA-IS-Miq" secondAttribute="bottom" constant="2" id="kmj-Vh-yxU"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="centerX" secondItem="Gzd-GG-Gm8" secondAttribute="centerX" id="l0e-zN-JOc"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="centerX" secondItem="Gzd-GG-Gm8" secondAttribute="centerX" id="lbv-fG-7z8"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="top" secondItem="mHL-Si-dzG" secondAttribute="top" id="m98-jb-J0d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mHL-Si-dzG" secondAttribute="bottom" constant="16" id="mhV-Sc-Lqa"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="baseline" id="muU-wo-LOn"/>
+                            <constraint firstItem="K7V-f6-dhs" firstAttribute="top" secondItem="mHL-Si-dzG" secondAttribute="top" id="sRH-MW-X9s"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="firstBaseline" id="uPD-wR-eMs"/>
                             <constraint firstItem="K7V-f6-dhs" firstAttribute="baseline" secondItem="mHL-Si-dzG" secondAttribute="firstBaseline" id="x5K-pn-J3a"/>
+                            <constraint firstItem="9ZU-5f-JU1" firstAttribute="top" secondItem="irA-IS-Miq" secondAttribute="bottom" constant="13" id="xGJ-Pp-l2w"/>
                             <constraint firstItem="mHL-Si-dzG" firstAttribute="baseline" secondItem="K7V-f6-dhs" secondAttribute="firstBaseline" id="ySQ-Ky-Dya"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dtS-oo-Imp"/>
+                                <exclude reference="gJ4-zi-Le6"/>
+                                <exclude reference="hCC-RQ-uu4"/>
+                                <exclude reference="ySQ-Ky-Dya"/>
+                                <exclude reference="0oS-G8-O4Z"/>
+                                <exclude reference="6kZ-xY-ujg"/>
+                                <exclude reference="7mV-uh-X3G"/>
+                                <exclude reference="AMG-Er-T2g"/>
+                                <exclude reference="CnF-kg-wvA"/>
+                                <exclude reference="Gjt-gR-7aC"/>
+                                <exclude reference="OO5-Bq-fWQ"/>
+                                <exclude reference="VNm-wa-d3Z"/>
+                                <exclude reference="a93-he-e8A"/>
+                                <exclude reference="b2C-gL-HrW"/>
+                                <exclude reference="cXp-Nc-4aQ"/>
+                                <exclude reference="lbv-fG-7z8"/>
+                                <exclude reference="muU-wo-LOn"/>
+                                <exclude reference="uPD-wR-eMs"/>
+                                <exclude reference="xGJ-Pp-l2w"/>
+                                <exclude reference="Az5-y8-JJH"/>
+                                <exclude reference="LbM-XR-UgZ"/>
+                                <exclude reference="EUa-s6-XnS"/>
+                                <exclude reference="M1E-ce-94d"/>
+                                <exclude reference="eOA-38-MhF"/>
+                                <exclude reference="fPs-00-OI8"/>
+                                <exclude reference="m98-jb-J0d"/>
+                                <exclude reference="x5K-pn-J3a"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="eCV-V8-M8Z"/>
                     <connections>
+                        <outlet property="filterLabel" destination="9ZU-5f-JU1" id="Qd8-Eb-zzT"/>
                         <outlet property="imageView" destination="IfF-Nt-54Z" id="ZUF-Tm-1DZ"/>
                         <outlet property="intensity" destination="irA-IS-Miq" id="ARy-Za-RLd"/>
                     </connections>
